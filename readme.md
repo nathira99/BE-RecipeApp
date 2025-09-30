@@ -26,3 +26,25 @@
    - Listen on a port for incoming requests
    - Setup a basic route to test the server
 
+4. nodemon setup
+
+   - Install nodemon module
+   - Setup a basic route to test the server
+
+5. MongoDB setup
+
+   - Create a cluster on MongoDB Atlas
+   - Create a database and collection
+   - Get the connection string
+   - Install mongoose using npm install mongoose
+   - Connect to MongoDB using mongoose in server.js
+
+6. dotenv setup
+
+   - Install dotenv using npm install dotenv
+   - Create a .env file to store environment variables
+   - Load environment variables in server.js
+
+7. MVC Architecture Setup -- Code Splitting
+
+   - Split code from server.js to app.js
