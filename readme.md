@@ -35,7 +35,7 @@
 
    - Create a cluster on MongoDB Atlas
    - Create a database and collection
-   - Get the connection string
+   - Get the connection string (mongodb+srv://nathirafarveen99_db_user:<password>@atlas.n1ulmll.mongodb.net/)
    - Install mongoose using npm install mongoose
    - Connect to MongoDB using mongoose in server.js
 
