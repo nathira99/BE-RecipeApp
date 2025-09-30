@@ -1,0 +1,32 @@
+{
+  "name": "be-recipeapp",
+  "version": "1.0.0",
+  "description": "A Recipe App that lets users create, view, update, and delete recipes with ingredients and cooking instructions.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nathira99/BE-RecipeApp.git"
+  },
+  "keywords": [
+    "backend",
+    "recipes",
+    "nodejs",
+    "expressjs",
+    "mangoose",
+    "CRUD",
+    "Postman"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nathira99/BE-RecipeApp/issues"
+  },
+  "homepage": "https://github.com/nathira99/BE-RecipeApp#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
