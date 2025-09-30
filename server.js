@@ -9,8 +9,8 @@ mongoose
     console.log("connected to mongoDB");
 
     // Listen on a port for incoming requests
-    app.listen(3001, "localhost", () => {
-      console.log("server listening on http://localhost:3001");
+    app.listen(3002, "localhost", () => {
+      console.log("server listening on http://localhost:3002");
     });
   })
   .catch((err) => console.error("could not connect to mongoDB", err));
