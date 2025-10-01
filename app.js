@@ -5,8 +5,6 @@ const recipesRouter = require('./routes/recipesRoutes');
 // Create express application
 const app = express();
 
-const port = process.env.PORT || 4000 
-
 app.use(express.json());
 
 app.use('/recipes', recipesRouter);
