@@ -23,7 +23,22 @@ const getAllRecipes = async (req, res) => {
   }
 };
 
+const getRecipeByID = async (req, res) => {
+  try {
+    const id = req.params.id;
+    const recipe = await recipes.findById(id).select("-__v");
+    if (!recipe) {
+      return res.status(404).json({ message: "Recipe not found..." });
+    } else res.status(200).json({ recipe });
+  } catch (error) {
+    res
+      .status(500)
+      .json({ message: "Fetching recipe failed...", error: error.message });
+  }
+};
+
 module.exports = {
   getAllRecipes,
   createRecipe,
+  getRecipeByID,
 };
