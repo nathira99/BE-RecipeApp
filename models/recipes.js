@@ -26,10 +26,10 @@ const recipeSchema = new mongoose.Schema(
         "other",
       ],
     },
-    cuisineType: {
-      type: String,
-      enum: ["italian", "indian", "mexican", "chinese", "american", "other"],
-    },
+    // cuisineType: {
+    //   type: String,
+    //   enum: ["italian", "indian", "mexican", "chinese", "american", "other"],
+    // },
     prepTime: {
       type: Number,
     },
