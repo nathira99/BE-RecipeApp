@@ -7,6 +7,6 @@ const app = express();
 
 app.use(express.json());
 
-app.use('/', recipesRouter);
+app.use('/recipes', recipesRouter);
 
 module.exports = app;
