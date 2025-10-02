@@ -33,7 +33,7 @@ const getRecipeByID = async (req, res) => {
   } catch (error) {
     res
       .status(500)
-      .json({ message: "Fetching recipe failed...", error: error.message });
+      .json({ message: "Fetching recipe by ID failed...", error: error.message });
   }
 };
 
