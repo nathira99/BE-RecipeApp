@@ -15,6 +15,7 @@ const createRecipe = async (req, res) => {
 const getAllRecipes = async (req, res) => {
   try {
     const recipe = await recipes.find().select("-__v");
+    console.log(recipe);
     res.status(200).json({ recipe });
   } catch (error) {
     res
@@ -27,6 +28,7 @@ const getRecipeByID = async (req, res) => {
   try {
     const id = req.params.id;
     const recipe = await recipes.findById(id).select("-__v");
+
     if (!recipe) {
       return res.status(404).json({ message: "Recipe not found..." });
     } else res.status(200).json({ recipe });
